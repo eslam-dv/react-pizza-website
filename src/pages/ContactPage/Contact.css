@@ -1,0 +1,64 @@
+.contact-content {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-left {
+  flex-basis: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .contact-left {
+    display: none;
+  }
+  .contact-right {
+    align-items: center;
+  }
+  .contact-right form {
+    width: 100%;
+  }
+}
+
+.contact-right {
+  flex: 1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-right h1 {
+  margin-bottom: 20px;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+
+.contact-right form label {
+  color: #777;
+}
+
+.contact-right form input,
+.contact-right form textarea {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ddd;
+  padding: 0.5em 1em;
+}
+
+.contact-right form input::placeholder,
+.contact-right form textarea::placeholder {
+  color: var(--bg-color);
+}
+
+.contact-right form input:focus,
+.contact-right form textarea:focus {
+  background-color: #0000ff24;
+}
